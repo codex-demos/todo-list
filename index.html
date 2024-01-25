@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>To Do List</title>
+<style>
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #f4f4f4;
+        color: #333;
+        line-height: 1.6;
+        padding: 20px;
+    }
+    .container {
+        max-width: 800px;
+        margin: auto;
+        background: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+        color: #005a9c;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+    .todo, .completed {
+        list-style: none;
+        padding: 0;
+    }
+    .todo li, .completed li {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+    }
+    .todo li:last-child, .completed li:last-child {
+        border-bottom: none;
+    }
+    .completed {
+        opacity: 0.6;
+    }
+    .completed li::before {
+        content: '✔ ';
+        color: green;
+    }
+    .important {
+        color: red;
+    }
+    .note {
+        font-size: 0.9em;
+        color: #999;
+        margin-top: 20px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Week 3 To Do List</h1>
+    <ul class="todo">
+        <li><strong>Programming Fundamentals</strong></li>
+        <li><strong>Math</strong>
+            <ul>
+                <li>Assignment 2 (on Mobius) - Saturday Jan 27 2024</li>
+                <li>Print Module 2 - Boolean Algebra - Weeks 4-6</li>
+            </ul>
+        </li>
+        <li><strong>HTML & CSS</strong>
+            <ul>
+                <li>Transcribe Jan 24 - in-class notes</li>
+            </ul>
+        </li>
+        <li><strong>Networking</strong>
+            <ul>
+                <li>Organize Lecture / Module Notes - no date</li>
+            </ul>
+        </li>
+        <li><strong>Communications</strong>
+            <ul>
+                <li>Writing Task 1 (available in week 2 & 3 modules) - Sunday January 28 2024</li>
+                <li>Writing Task 2 (available in week 3 & 4-5 modules) - Sunday February 12 2024</li>
+            </ul>
+        </li>
+    </ul>
+    <h1>Completed</h1>
+    <ul class="completed">
+        <li>COMMUNICATIONS - Communication Challenge 1 (Module 1) - Sunday January 14 2024</li>
+        <li>COMMUNICATIONS - Communication Challenge 2.1 (Module 2) - Friday January 19 2024</li>
+        <li>COMMUNICATIONS - Communication Challenge 2.2 (Module 2) - Sunday January 21 2024</li>
+        <li>COMMUNICATIONS - Communication Challenge 3.1 (Module 3) - January 28, 2024</li>
+        <li>COMMUNICATIONS - Communication Challenge 3.2 (Module 3) - January 28, 2024</li>
+        <li>MATH - MathZone Quiz (on Mobius) - Saturday January 13 2024</li>
+        <li>MATH - Assignment 1 (on Mobius) - Saturday Jan 20 2024</li>
+        <li>HTML - Lab 1 (creating a webpage + broccoli) - Sunday Jan 28 2024</li>
+        <li>NETWORKING - What is a Computer (in person lab) - Wednesday Jan 17 2024</li>
+        <li>PROGRAMMING - Assignment 1 (matchsticks and logic puzzle) - Sunday Jan 28 2024</li>
+    </ul>
+    <p class="note">All dates subject to change</p>
+</div>
+</body>
+</html>
